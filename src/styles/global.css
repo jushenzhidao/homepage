@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #02060f;
+  overflow: hidden;
+}
+
+/* 应用壳透明化：让 HomeView 的固定定位层直接参与 body 布局（流式画布 body 是 flex） */
+#app {
+  display: contents;
+}
+
+body {
+  font-family: 'Sora', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
