@@ -1,0 +1,7 @@
+services:
+  web:
+    image: ghcr.io/jushenzhidao/homepage:${IMAGE_TAG:?请在同目录 .env 里设置 IMAGE_TAG，例如 sha-abc1234}
+    container_name: homepage-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8090:80"
